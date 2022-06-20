@@ -44,3 +44,11 @@ summary.lm(simp)
 The plot that relates the variables Length with Neck has a higher adjusted R_squared value when compared to the plot with the variables Length with Wieght. Length with Neck also produces a smaller residual standard error value (5.376 compared to 5.432). The variable "neck" appears to be the more accurate variable when trying to predict length. 
 
 
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+In this graph, the residual standard error and adjusted r-squared values are too high/low when compared to the previous variables. This shows the relationship between a bears age and length is quite weak. 
