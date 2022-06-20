@@ -52,3 +52,12 @@ summary.lm(simp)
 ```
 
 In this graph, the residual standard error and adjusted r-squared values are too high/low when compared to the previous variables. This shows the relationship between a bears age and length is quite weak. 
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The above scatterplot shows the relationship between length and headwth. This plot shows a higher residual standard error and a smaller adjusted r-squared when compared to the relationship between length and neck. 
