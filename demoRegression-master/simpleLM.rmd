@@ -61,3 +61,12 @@ summary.lm(simp)
 ```
 
 The above scatterplot shows the relationship between length and headwth. This plot shows a higher residual standard error and a smaller adjusted r-squared when compared to the relationship between length and neck. 
+
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The residual standard error and adjusted r-squared value with the variables of Length and Headlen better describes bear length in comparison to the plot illustrating the relationship between length and neck. 
